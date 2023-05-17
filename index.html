@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<link href="./css/style.css" rel="stylesheet" style="" type="text/css">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lures</title>
+	<link rel="stylesheet" href="https://use.typekit.net/ayz6eui.css">
+</head>
+<body>
+
+	<nav>
+		<div id="navunfold">
+			<h4>What is<br>Fishing Lures?</h4>
+			<h4>Structure</h4>
+			<h4>Movements</h4>
+		</div>
+		<div id=unfold  
+			onclick="fold.style.display = 'block'; unfold.style.display = 'none'; navunfold.style.display = 'none'; ">
+			<div class="arrow"></div>
+		</div>
+		<div id=fold  
+			onclick="unfold.style.display = 'block'; fold.style.display = 'none'; navunfold.style.display = 'block'; ">
+			<div class="arrow"></div>
+		</div>
+	</nav>
+
+	<div id="hero">
+		<h1 class="t-white" style="z-index: 700; margin-bottom: 30vw;">
+			Principle & forms<br>of Fishing Lures
+		</h1>
+		<div class="blink" style="width: 160px; padding: 8px; padding-top: 12px; background: rgb(0, 60, 255); margin: auto; ">
+			<h4 class="t-white" style="margin:0;z-index: 700;">Press the Lures !!</h4></div>
+	</div>
+
+	<div id="lures">
+		<button type="button" class="fast re delay1" onclick="colorset(1)"><img src="./img/lures/lure1.png"></button>
+		<button type="button" class="slow " onclick="colorset(2)"><img src="./img/lures/lure2.png"></button>
+		<button type="button" class="fast re" onclick="colorset(3)"><img src="./img/lures/lure3.png"></button>
+		<button type="button" class="slow  delay1" onclick="colorset(4)"><img src="./img/lures/lure4.png"></button>
+		<button type="button" class="slow re delay2" onclick="colorset(5)"><img src="./img/lures/lure5.png"></button>
+		<button type="button" class="fast" onclick="colorset(6)"><img src="./img/lures/lure6.png"></button>
+		<button type="button" class="slow delay2" onclick="colorset(7)"><img src="./img/lures/lure7.png"></button>
+		<button type="button" class="slow re " onclick="colorset(8)"><img src="./img/lures/lure8.png"></button>
+		<button type="button" class="fast re" onclick="colorset(9)"><img src="./img/lures/lure9.png"></button>
+		<button type="button" class="fast delay1" onclick="colorset(10)"><img src="./img/lures/lure10.png"></button>
+		<button type="button" class="slow re delay1" onclick="colorset(11)"><img src="./img/lures/lure11.png"></button>
+	</div>
+
+	<main>
+		<div>
+			<h2>What is Fishing Lures?</h2>
+			<h3>루어 미끼</h3>
+			<div class="wrapper flex">
+				<p class="col2">루어 미끼는 물고기를 유인하고 잡기 위해 사용되는 도구이다. <br>보통 낚싯줄 끝에 부착되며, 자연의 먹이를 모방하여 물고기를 속인다.</p>
+				<p class="col2"><img src="./img/img1.svg"></p>
+			</div>
+			<div class="wrapper flex">
+				<p class="col2">물고기가 먹이로 삼는 특정한 종류의 물고기나 다른 동물과 유사한 <br>형태나 색, 움직임이나 빛 또는 소리를 내어 물고기를 유인한다.</p>
+				<p class="col2">(img)</p>
+			</div>
+			<div class="wrapper flex">
+				<p class="col2">이는 다양한 크기, 모양, 색상과 재료로 만들어지며 각각의 화려한 비주얼을 가진다. <br>낚시꾼은 잡으려는 물고기의 종류와 낚시 조건에 따라 다양한 종류의 미끼를 사용한다.</p>
+				<p class="col2">(img)</p>
+			</div>
+		</div>
+		<div>
+			<h2>Structure</h2>
+			<h3>구조</h3>
+			<p class="col2">(img)</p>
+			<div class="wrapper flex">
+				<p class="col2">몸체<br>나무나 플라스틱과 같은 가벼운 소재로 만들어지거나 속이 비어 부력을 가진다. <br>일반적으로 몸체는 하나의 파트로 이루어지지만, 꼬리지느러미를 흔드는 움직임을 <br>더욱 자연스럽게 하기 위해 두 개 이상의 파트를 결합하기도 한다.</p>
+				<p class="col2">립<br>몸체 앞부분에 부착된 얇은 판금 또는 플라스틱 립은 수심(잠수능력)과 움직임에 <br>영향을 준다. 진행방향의 하단을 비스듬히 향하는 립은 낚싯줄을 끌어올릴 때 <br>수면 반대 방향으로 물살에 저항을 받는다. 이때 립이 작으면 잠수능력이 약해 <br>얕은 수심에 위치하게 되며, 반대로 립이 크면 상대적으로 깊은 수심에 위치한다.<br>또한 물살의 저항은 진행방향과 립의 각도에 따라 양 옆으로도 분산되는데, <br>이는 루어가 좌우로 흔들리는 움직임(Wabbling)을 만든다.</p>
+			</div>
+		</div>
+		<div>
+			<h2>Movement</h2>
+			<h3>움직임</h3>
+			<p class="col2">(Video)</p>
+		</div>
+	</main>
+
+
+<script type="text/javascript">
+function colorset( num ) {
+	if(num == 1){document.bgColor = "crimson"}
+	if(num == 2){document.bgColor = "orange";}
+	if(num == 3){document.bgColor = "lemonchiffon";}
+	if(num == 4){document.bgColor = "lightskyblue"}
+	if(num == 5){document.bgColor = "darkgray";}
+	if(num == 6){document.bgColor = "tan";}
+	if(num == 7){document.bgColor = "lightblue";}
+	if(num == 8){document.bgColor = "ghostwhite";}
+	if(num == 9){document.bgColor = "seagreen";}
+	if(num == 10){document.bgColor = "purple";}
+	if(num == 11){document.bgColor = "dodgerblue";}
+}
+</script>
+
+</body>
+</html>

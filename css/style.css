@@ -1,0 +1,99 @@
+html,body,header,main,footer,div{margin: 0; padding: 0}
+html{font-family: pretendard, sans-serif;
+	    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='80' height='96' viewport='0 0 100 100' style='fill:black;font-size:48px;'><text y='50%'>🎣</text></svg>") 0 32, auto;
+}
+
+body{overflow-x:hidden; overflow-y:auto;}
+
+main{width: 1280px; margin: auto;}
+
+
+h1,h2,h3,h4,p{font-weight: 500; margin:0 }
+h1,h2,h4{font-family: bc-ludva, sans-serif;}
+	h1{font-size: 128px; filter: drop-shadow(0px 16px 8px rgba(0, 0, 0, 0.2)); text-align: center; }		
+	h2{font-size: 56px; text-align: left; margin-top: 160px}
+	h3{font-size: 24px; margin-bottom: 40px; text-align: left; }
+	h4{font-size: 36px; text-align: center; margin-bottom: 80px;}
+	p{font-size: 17px;  line-height: 26px; text-align: left; }
+
+
+	.absolute { position: absolute; }
+	.relative { position: relative; }
+	.t-white{color: white;}
+	.tight{margin: 0;}
+
+
+#unfold,#fold{background: rgba(0, 60, 255, 100); border: 3.8px solid white; height: 32px; width: 32px; border-radius: 20px; 
+	position: fixed; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); transition: 0.3s; z-index: 999;}
+#unfold:hover,#fold:hover{background: lightgreen; box-shadow: 0px 24px 16px rgba(0, 0, 0, 0.4);}
+#unfold{display: none; transform:rotateY(180deg); top: 20px; left: 260px; }
+#fold{transform: rotateY(0deg); top: 20px; left: 20px; }
+.arrow {position: relative;}
+.arrow::after {position: absolute;
+    top: 8px; left: 5px;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-top: 4px solid white;
+    border-right: 4px solid white;
+    transform: rotate(45deg);}
+#navunfold{display: none; background: white; position: fixed; top: 0; left: 0; 
+	width: 240px; height: 100vh; padding: 80px 0px 80px 0px;
+		box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+		z-index: 999;}
+
+
+
+#hero{background: linear-gradient(to bottom,
+            rgba(0, 60, 255, 100) 0%,
+            rgba(0, 60, 255, 100) 15%,
+            rgba(0, 60, 255, 0) 100%); 
+	height: 100vh; padding-top: 300px; margin: auto;
+	z-index: 900;}
+
+
+
+#lures{position: absolute; z-index: 800; width: 100px;}
+
+
+
+img{filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.2));}
+#lures img{filter: drop-shadow(0px 64px 16px rgba(0, 0, 0, 0.2));}
+.col2 img{position: absolute; bottom: 0%;}
+
+button{background: transparent; border:none; padding: 0; margin: 0; transition: 0.3s;
+	    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='80' height='96' viewport='0 0 100 100' style='fill:black;font-size:48px;'><text y='50%'>🐟</text></svg>") 0 32, auto;
+}
+
+
+.wrapper{margin: auto; margin-bottom: 40px; }
+.flex{display: flex; position: relative;}
+.col2{width: 632px; gap: 16px; vertical-align: bottom; }
+.button-bg{box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);}
+
+
+.blink{animation: blink 1s infinite alternate;}
+@keyframes blink{
+  0%	{top: ; filter: drop-shadow(0px 32px 16px rgba(0, 0, 0, 0.2));}
+  10% {filter: drop-shadow(0px 32px 16px rgba(0, 0, 0, 0.2));}
+  50% {filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));}
+  60% {filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));}
+  100%{filter: drop-shadow(0px 32px 16px rgba(0, 0, 0, 0.2));}
+}
+
+
+
+
+.fast{position: relative; animation: fast 40s infinite}
+@keyframes fast{
+  0%   {left:-30vw;}
+  100% {left:130vw;}
+}
+.slow{position: relative; animation: ls 60s infinite}
+@keyframes ls{
+  0%   {left:-30vw;}
+  100% {left:130vw;}
+}
+.re{animation-direction: reverse;}
+.delay1{animation-delay: 20s}
+.delay2{animation-delay: 10s}
